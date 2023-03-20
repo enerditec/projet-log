@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  li {
+    width: 30%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a:hover {
+    background-color: #d9d9d9;
+  }
+  
+  @media (max-width: 768px) {
+    li {
+      width: 45%;
+      height: 150px;
+      font-size: 20px;
+    }
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .services-container .service {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services-container .service .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .services-container .service .status {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+  }
+  
+  .services-container .service .status.offline {
+    background-color: red;
+  }
+  
+  .services-container .service .status.online {
+    background-color: green;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.5;
+    }
+  }
